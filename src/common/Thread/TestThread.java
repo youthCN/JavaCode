@@ -1,4 +1,4 @@
-package Thread;
+package common.Thread;
 
 public class TestThread {
     public static void main(String[] args) {

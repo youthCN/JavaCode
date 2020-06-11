@@ -1,4 +1,4 @@
-package Generic;
+package common.Generic;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

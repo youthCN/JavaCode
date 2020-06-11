@@ -1,4 +1,4 @@
-package Reference;
+package common.Reference;
 
 import java.lang.ref.Reference;
 import java.lang.ref.ReferenceQueue;
@@ -14,8 +14,8 @@ public class TestReference {
         //当GC执行后，由于是弱引用，所以回收该object对象，并且置于pending上，此时reference的状态为PENDING
         System.gc();
 
-        /* ReferenceHandler从pending中取下该元素，并且将该元素放入到queue中，此时Reference状态为ENQUEUED，Reference.queue = ReferenceENQUEUED */
-        /* 当从queue里面取出该元素，则变为INACTIVE，Reference.queue = Reference.NULL */
+        /* ReferenceHandler从pending中取下该元素，并且将该元素放入到queue中，此时Reference状态为ENQUEUED，common.Reference.queue = ReferenceENQUEUED */
+        /* 当从queue里面取出该元素，则变为INACTIVE，common.Reference.queue = common.Reference.NULL */
         Reference reference1 = null;//reference1和reference指向同一个对象
         try {
             reference1 = queue.remove();

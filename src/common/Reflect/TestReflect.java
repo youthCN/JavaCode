@@ -1,4 +1,4 @@
-package Reflect;
+package common.Reflect;
 
 public class TestReflect {
     /**
